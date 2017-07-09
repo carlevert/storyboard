@@ -1,0 +1,116 @@
+body {
+    background-color: #ddd;
+}
+
+.epic {
+    margin: 2px;
+    .summary {
+      background-color: #eee;
+      padding: 16px;
+      .name {
+         font-size: 180%;
+         font-weight: 700;
+         text-align: center;
+      }
+      .images {
+         display: flex;
+         flex-direction: row;
+         margin: 8px 0;
+         .image {
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            margin-right: 8px;
+            &:last-child {
+               margin-right: 0;
+            }
+         }
+      }
+     .description {
+         font-weight: 500;
+         max-width: 500px;
+      }
+    }
+    .stories {
+      display: flex;
+      flex-direction: row;
+      padding: 7px;
+      background-color: #eee;
+      .story-container {
+          margin-left: 8px;
+
+          &:first-child {
+             margin-left: 0;
+          }
+         .story  {
+            background-color: #FFF291;
+         }
+         .task {
+            margin-top: 8px;
+            background-color: white;
+         }
+         .card {
+            font-size: 80%;
+            position: relative;
+            height: 70px;
+            width: 110px;
+            box-shadow: 0 1px 2px 0px black;
+            &.focus {
+               background-color: rgba(red, 0.5);
+            }
+            .plus {
+               $size: 15px;
+               width: $size;
+               height: $size;
+               position: absolute;
+               text-align: center;
+               line-height: $size;
+               left: 50px - $size / 2;
+               top: 68px - $size / 2;
+               border-radius: $size;
+               box-shadow: 0 1px 2px -1px black;
+               background-color: rgba(yellow, 0.3);
+               &:hover {
+                  background-color: yellow;               
+               }
+            }
+            .delete {
+               $size: 15px;
+               width: $size;
+               height: $size;
+               position: absolute;
+               text-align: center;
+               line-height: $size;
+               right: 5px;
+               top: 5px;
+               border-radius: $size;
+               border: none;
+               background-color: rgba(0,0,0,0.3);
+               outline: none;
+               &:hover {
+                  background-color: black;               
+               }
+            }
+            input {
+               height: calc(100% - 10px);
+               width: calc(100% - 10px);
+               display: block;
+               padding: 5px !important;
+               border:none;
+               margin: none;
+               outline: 1px solid black !important;
+               background-color: transparent;
+            }
+            input:focus, input:active {
+               margin: 0;
+               padding: 0;
+            }
+         }
+
+      }  
+   }
+
+
+}
+
+

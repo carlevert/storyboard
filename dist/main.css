@@ -1,0 +1,87 @@
+body {
+  background-color: #ddd; }
+
+.epic {
+  margin: 2px; }
+  .epic .summary {
+    background-color: #eee;
+    padding: 16px; }
+    .epic .summary .name {
+      font-size: 180%;
+      font-weight: 700;
+      text-align: center; }
+    .epic .summary .images {
+      display: flex;
+      flex-direction: row;
+      margin: 8px 0; }
+      .epic .summary .images .image {
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        margin-right: 8px; }
+        .epic .summary .images .image:last-child {
+          margin-right: 0; }
+    .epic .summary .description {
+      font-weight: 500;
+      max-width: 500px; }
+  .epic .stories {
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+    background-color: #eee; }
+    .epic .stories .story-container {
+      margin-left: 8px; }
+      .epic .stories .story-container:first-child {
+        margin-left: 0; }
+      .epic .stories .story-container .story {
+        background-color: #FFF291; }
+      .epic .stories .story-container .task {
+        margin-top: 8px;
+        background-color: white; }
+      .epic .stories .story-container .card {
+        font-size: 80%;
+        position: relative;
+        height: 70px;
+        width: 110px;
+        box-shadow: 0 1px 2px 0px black; }
+        .epic .stories .story-container .card.focus {
+          background-color: rgba(255, 0, 0, 0.5); }
+        .epic .stories .story-container .card .plus {
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          text-align: center;
+          line-height: 15px;
+          left: 42.5px;
+          top: 60.5px;
+          border-radius: 15px;
+          box-shadow: 0 1px 2px -1px black;
+          background-color: rgba(255, 255, 0, 0.3); }
+          .epic .stories .story-container .card .plus:hover {
+            background-color: yellow; }
+        .epic .stories .story-container .card .delete {
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          text-align: center;
+          line-height: 15px;
+          right: 5px;
+          top: 5px;
+          border-radius: 15px;
+          border: none;
+          background-color: rgba(0, 0, 0, 0.3);
+          outline: none; }
+          .epic .stories .story-container .card .delete:hover {
+            background-color: black; }
+        .epic .stories .story-container .card input {
+          height: calc(100% - 10px);
+          width: calc(100% - 10px);
+          display: block;
+          padding: 5px !important;
+          border: none;
+          margin: none;
+          outline: 1px solid black !important;
+          background-color: transparent; }
+        .epic .stories .story-container .card input:focus, .epic .stories .story-container .card input:active {
+          margin: 0;
+          padding: 0; }

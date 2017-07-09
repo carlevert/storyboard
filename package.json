@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass default.scss static/default.css",
+    "sass": "node-sass scss/main.scss dist/main.css",
     "sass-watch": "nodemon -e scss -x \"npm run sass\"",
-    "webpack": "node ./node_modules/webpack/bin/webpack.js --config ./webpack.config.js",
+    "webpack": "webpack --config ./webpack.config.js",
     "dev-server": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config ./webpack.config.js"
   },
   "author": "",
